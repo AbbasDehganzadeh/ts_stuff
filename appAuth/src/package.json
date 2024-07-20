@@ -1,0 +1,15 @@
+{
+  "name": "appAuth",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"",
+    "start:session":"nodemon index_session.js",
+    "start:token":"nodemon index_token.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
