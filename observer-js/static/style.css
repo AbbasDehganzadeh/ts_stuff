@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  display: flex;
+}
+
+.half {
+  flex: 1;
+}
+
+.section {
+  margin: 1rem .4rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-bottom: .4rem;
+}
+
+.inputs {
+  display: inline-flex;
+  width: 100%;
+  gap: .4rem;
+}
+
+#event_inp, #obs_name {
+  flex: 3;
+}
+
+#obs_col {
+  flex: 2;
+}
+
+.log {
+  height: 100px;
+  width: auto;
+  background-color: #fffff1;
+  overflow: overlay;
+}
+
+.record {
+  font-size: 1rem;
+  border-bottom: 1px solid #313131;
+  padding: .2rem 1.2rem;
+}
+
+.events {
+  height: 250px;
+}
+
+.sub_wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: .4rem 1rem;
+}
+
+.sub_conf {
+  display: inline-flex;
+  position: relative;
+  top: 50%;
+  margin: auto .4rem;
+}
+
+.sec_btn {
+  max-width: 48px;
+  margin: auto .4rem;
+  color: whitesmoke;
+  background-color: dimgrey;
+  border-color: darkred;
+  accent-color: orangered;
+}
+
+.del_btn {
+  background-color: darkred;
+  border-color: darkgreen;
+  accent-color: orangered;
+}
+
+.spec_name {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(105, 105, 105, .05);
+  padding-top: .2rem;
+}

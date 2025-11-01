@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Observer Pattern</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page">
+    <!-- control pannel -->
+    <div class="half">
+      <div class="section">
+        <h2 class="title">Subject</h2>
+        <div class="inputs">
+          <input id="event_inp" placeholder="An event" />
+          <button id="notify_btn">Notify</button>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="title">Observers</h2>
+        <div class="inputs">
+          <input id="obs_name" placeholder="Name" />
+          <input id="obs_col" placeholder="Color" />
+          <select id="obs_sec">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>5</option>
+            <option>10</option>
+            <option>15</option>
+            <option>20</option>
+            <option>30</option>
+          </select>
+          <button id="subscribe_btn">Subscribe</button>
+        </div>
+        <div id="subscribers_log" class="log subscribers section">
+        </div>
+      </div>
+    </div>
+    <!-- logger events -->
+    <div class="half">
+      <h2 class="title">Logs</h2>
+      <div id="events_log" class="log events section">
+      </div>
+    </div>
+  </div>
+  <script src="observer.js"></script>
+</body>
+
+</html>
