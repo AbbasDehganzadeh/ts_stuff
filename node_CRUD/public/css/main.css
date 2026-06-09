@@ -1,0 +1,63 @@
+/* main.css  */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	padding: .8em;
+	background-color: #f9f9f9;
+	font-family: "roboto" sans-serif;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 2em;
+    margin: .4rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.5em;
+    margin: .4rem;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1em;
+    margin: .4rem;
+}
+
+p {
+    font-size: 14px;
+    margin: .4rem;
+}
+
+span {
+    font-weight: lighter;
+    margin: .4rem;
+}
+
+a {
+	outline-color: blueviolet;
+	accent-color: skyblue;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+button {
+	padding: .2em;
+	margin: .4em;
+	background-color: #ededed;
+	border: 1px solid transparent;
+}
+
+button:hover {
+	padding: .2rem .3em;
+	border-color: deepskyblue;
+}

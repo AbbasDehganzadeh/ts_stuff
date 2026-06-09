@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/note.css">
+	<title>detail note</title>
+</head>
+<body>
+
+<% if note %>
+<div id="<%=note.id%>">
+<h1 class="title"><%= note.title %></h1>
+<p class="content"><b><%= note.content %></b></p>
+<!-- Defined Actions -->
+<div class="action-box">
+    <a href='/note/update/?id="<%=note.id%>"'>
+    <button class="update-one">Update It</button></a>
+	<button id="del-one">Delete It</button>
+</div>
+</div>
+<% else %>
+<h4 class="blank">No note here!</h4>
+<% endif %>
+
+<script src="/js/note.js"></script>
+</body>
+</html>

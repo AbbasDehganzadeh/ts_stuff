@@ -1,0 +1,57 @@
+/* note.css  */
+
+.action-box {
+    margin: 0 5px;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: .4em;
+}
+
+.del-chx {
+	accent-color: deepskyblue;
+	caret-color: rosybrown;
+	caret-shape: bar;
+}
+
+.excerpt {
+	line-break: loose;
+}
+
+.content {
+	text-align: justify;
+	text-emphasis: none;
+	text-indent: 16px;
+	text-justify: inter-character;
+	word-wrap: break-word;
+	word-spacing: .06rem;
+}
+
+.note-form {
+	max-width: 360px;
+	margin: .8em;
+	background-color: #a0a0a0;
+	display: grid;
+	grid-row-gap: .4em;
+}
+
+.header-form {
+	margin: 0 auto;
+	padding: 0 .8em .4em;
+	font-size: 24px;
+}
+
+label {
+	margin: .4rem;
+}
+
+button[type=submit] {
+	align-self: flex-start;
+	width: 50px;
+	margin: 10px;
+}
+
+.error-form {
+	color: firebrick;
+	text-indent: 6px;
+}

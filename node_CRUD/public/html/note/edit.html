@@ -1,0 +1,18 @@
+<link rel="stylesheet" type="text/css" href="/css/note.css">
+<title>edit note</title>
+
+<form action="/note/update" class="note-form">
+	<h2 class="header-form">edit header</h2>
+	<div class="field">
+		<label for="title">Title</label>
+		<input value="<%= note.title %>" name="title" id="title-inp" />
+	</div>
+
+	<div class="field">
+		<label for="content">Content</label>
+		<textarea id="content-inp" name="content" rows="4"><%= note.content %></textarea>
+	</div>
+	<button type="submit">Update </button>
+</form>
+<div class="error-form"></div>
+<script src="/js/note.js"></script>

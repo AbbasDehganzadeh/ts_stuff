@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/note.css">
+    <title>list note</title>
+</head>
+<body>
+<%=auth %>
+
+<div class="action-box">
+<a href="/note/create/">
+    <button id="add-one">Create One</button>
+</a>
+<% if notes %>
+<button id="del-some">Delete Some</button>
+<button id="del-all">Delete All</button>
+</div>  
+ <% for note of notes%>
+ <div id="<%=note.id%>">
+  <h2 class="title"><%= note.title %></h2>
+  <p class="excerpt"><%= note.content%></p>
+<!-- Defined Actions -->
+ <div class="action-box">
+    <a href='/note/?title="<%=note.title%>"'>
+    <button class="show-one">Details</button></a>
+    <a href='/note/update/?id="<%=note.id%>"'>
+    <button class="update-one">Update</button></a>
+    <span>Delete</span>
+    <input type="checkbox" class="del-chx">
+ </div>
+</div>
+  <% endfor %>
+ <% else%>
+ <!-- unclose div -->
+</div>
+  <h4 class="blank">nothing to remind you</h4>
+<%endif %>
+
+<script src="/js/note.js"></script>
+</body>
+</html>

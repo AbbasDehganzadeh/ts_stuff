@@ -1,0 +1,19 @@
+<link rel="stylesheet" type="text/css" href="/css/note.css">
+<title>form note</title>
+
+<form action="/note/create" method="POST" class="note-form">
+	<h2 class="header-form">form header</h2>
+	<div class="field">
+		<label for="title">Title</label>
+		<input id="title-inp" name="title" value="title"/>
+	</div>
+
+	<div class="field">
+		<label for="content">Content</label>
+		<textarea id="content-inp" name="content" rows="4">content</textarea>
+	</div>
+	<button type="submit">New </button>
+
+</form>
+<div class="error-form"></div>
+<script src="/js/note.js"></script>
