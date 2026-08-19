@@ -1,0 +1,76 @@
+/* Nebular Theme Import */
+
+/* Custom Minimal Elegant Styles */
+:root {
+  --primary-color: #3366ff;
+  --text-primary: #2e3a59;
+  --text-secondary: #8f9bb3;
+  --background-basic: #f1f1f1;
+  --background-alternative: #ffffff;
+  --border-basic: #edf1f7;
+  --shadow-subtle: 0 2px 12px 0 rgba(46, 58, 89, 0.08);
+}
+
+/* Global Typography & Spacing */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--background-alternative);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--background-basic);
+  min-height: 100vh;
+  box-shadow: var(--shadow-subtle);
+}
+
+.form-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Button Enhancements */
+button {
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+/* Table Enhancements */
+.table-container {
+  background: var(--background-basic);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow-subtle);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .form-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* RTL Support Enhancement */
+[dir="rtl"] .form-section {
+  text-align: right;
+}
+
+/* Subtle Animations */
+* {
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}

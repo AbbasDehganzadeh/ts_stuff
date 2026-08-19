@@ -1,0 +1,45 @@
+<div class="table-container">
+  @if((users$ | async)?.length; as userCount) {
+  <table class="contacts-table">
+    <thead>
+      <tr>
+        <th>نام و نام خانوادگی</th>
+        <th>شماره تماس</th>
+        <th>آدرس ایمیل</th>
+        <th>انتخاب</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(user of users$ | async; track user.id) {
+      <tr>
+        <td>{{user.name}}</td>
+        <td>{{user.number || '—'}}</td>
+        <td>{{user.email || '—'}}</td>
+        <td>
+          <input
+            type="checkbox"
+            [checked]="userids[user.id]"
+            [id]="user.id"
+            (click)="onToggle(user.id)"
+          />
+        </td>
+      </tr>
+      }
+    </tbody>
+  </table>
+  } @else {
+  <div class="empty-state">
+    <p>هیچ مخاطبی یافت نشد</p>
+    <p style="font-size: 0.875rem">برای شروع، مخاطب جدیدی اضافه کنید</p>
+  </div>
+  }
+</div>
+
+<div class="action-buttons">
+  <button (click)="onApplyActions()">حذف انتخاب شده‌ها</button>
+  @if(!selectedAll) {
+  <button (click)="onSelectAll()">انتخاب همه</button>
+  } @else {
+  <button (click)="onUnSelectAll()">انتخاب هیچ</button>
+  }
+</div>

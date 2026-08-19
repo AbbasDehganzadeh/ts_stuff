@@ -1,0 +1,11 @@
+<div class="form-section">
+  <input type="hidden" name="id" />
+  <input [(ngModel)]="name" placeholder="نام و نام خانوادگی" name="name" />
+  <input [(ngModel)]="number" placeholder="شماره تماس" name="number" />
+  <input [(ngModel)]="email" placeholder="آدرس ایمیل" name="email" />
+</div>
+
+<div class="action-buttons">
+  <button (click)="onSave()">ذخیره مخاطب</button>
+  <button (click)="onClear()">پاک کردن فرم</button>
+</div>
